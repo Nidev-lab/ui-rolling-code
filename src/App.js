@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Link to RollingCode UI {" "}
+          Link to RollingCode UI {' '}
           <a
             className="App-link"
             href="https://reactjs.org"

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Button from './Button';
 
 export default {
@@ -20,5 +19,12 @@ Primary.args = {
 
 export const Secondary = Template.bind({});
 Secondary.args = {
+  secondary: true,
   label: 'BOLSA DE TRABAJO',
+};
+
+export const Whatsapp = Template.bind({});
+Whatsapp.args = {
+  whatsapp: true,
+  label: '¿Preguntas? ¡Escribenos!',
 };

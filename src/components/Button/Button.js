@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
+import Whatsapp from '../../utils/Icons/Whatsapp';
 
-const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'button--primary' : 'button--secondary';
+const Button = ({
+  primary, secondary, whatsapp, backgroundColor, size, label, ...props
+}) => {
+  const mode = (primary && 'button--primary') || (secondary && 'button--secondary') || (whatsapp && 'button--whatsapp');
 
   return (
     <button
@@ -12,6 +15,7 @@ const Button = ({ primary, backgroundColor, size, label, ...props }) => {
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
+      { whatsapp && <Whatsapp style={{ marginRight: '5px' }} /> }
       {label}
     </button>
   );
@@ -19,6 +23,8 @@ const Button = ({ primary, backgroundColor, size, label, ...props }) => {
 
 Button.propTypes = {
   primary: PropTypes.bool,
+  secondary: PropTypes.bool,
+  whatsapp: PropTypes.bool,
   backgroundColor: PropTypes.string,
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   label: PropTypes.string.isRequired,
