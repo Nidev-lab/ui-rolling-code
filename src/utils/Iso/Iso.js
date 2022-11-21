@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import IsoBlack from '../../../assets/isotipo/RollingCodeIsoNegro.png';
-import IsoWhite from '../../../assets/isotipo/RollingCodeIsoBlanco.png';
+import IsoBlack from '../../assets/isotipo/RollingCodeIsoNegro.png';
+import IsoWhite from '../../assets/isotipo/RollingCodeIsoBlanco.png';
 
 const Iso = ({ width, height, variant }) => {
   return <img src={ variant === 'black' ? IsoBlack : IsoWhite } alt="Isotipo RollingCode" width={width} height={height} />;

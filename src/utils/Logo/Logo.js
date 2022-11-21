@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import getLogoSelected from '../../../utils/getLogoSelected';
+import getLogoSelected from '../helpers/getLogoSelected';
 
 const Logo = ({
   width, height, area, variant,

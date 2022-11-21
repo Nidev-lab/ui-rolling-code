@@ -1,8 +1,8 @@
 {
   "name": "ui-rolling-code",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@storybook/addon-docs": "^6.5.13",
     "@testing-library/jest-dom": "^5.16.5",
