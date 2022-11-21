@@ -35,7 +35,7 @@ LogoSchoolBlanco.parameters = {
   backgrounds: {
     default: 'black',
     values: [
-      { name: 'black', value: '#000' },
+      { name: 'black', value: '#1A1A1A' },
       { name: 'white', value: '#fff' },
     ],
   },
