@@ -1,12 +1,10 @@
 import React from 'react';
+import { ArgsTable } from '@storybook/addon-docs';
 import Button from './Button';
 
 export default {
-  title: 'Components/Button',
+  title: 'Components/actions/Button',
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 };
 
 const Template = (args) => <Button {...args} />;
@@ -28,3 +26,5 @@ Whatsapp.args = {
   whatsapp: true,
   label: '¿Preguntas? ¡Escribenos!',
 };
+
+<ArgsTable of={Button} />;

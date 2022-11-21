@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
-import Whatsapp from '../../utils/Icons/Whatsapp';
+import Whatsapp from '../../../utils/Icons/Whatsapp';
 
 const Button = ({
   primary, secondary, whatsapp, backgroundColor, size, label, ...props

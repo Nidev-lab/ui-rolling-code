@@ -30,7 +30,7 @@
       "react/prop-types": [1, { "ignore": ["children"] }],
       "import/no-extraneous-dependencies": [
         "warn",
-        { "devDependencies": ["**/*.stories.js", "**/*.spec.js", "error", {"devDependencies": true}] }
+        { "devDependencies": ["**/*.stories.js", "**/*.spec.js"] }
       ],
       "import/prefer-default-export": "off"
     },
